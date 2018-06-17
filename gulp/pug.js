@@ -66,7 +66,7 @@ const pug = ({
           rootpath: path.join(__dirname, '..')
         })
       ))
-      // Fix for Windows 10 and gulp acting crazy
+      // Fix for Windows 10 and gulp  acting crazy
       .pipe(plugins.rename(file => {
         const dest = taskTarget;
         fixWindows10GulpPathIssue({file, dest, plugins, config});
