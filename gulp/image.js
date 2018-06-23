@@ -2,7 +2,8 @@
 
 import path from 'path';
 import pngquant from 'imagemin-pngquant';
-import jpegoptim from 'imagemin-jpegoptim';
+-import jpegoptim from 'imagemin-jpegoptim';
++import jpegtran from 'imagemin-jpegtran';
 import optipng from 'imagemin-optipng';
 import gifsicle from 'imagemin-gifsicle';
 import svgo from 'imagemin-svgo';
@@ -49,7 +50,8 @@ const image = ({
         config,
         plugins,
         pngquant,
-        jpegoptim,
+  -      jpegoptim,
+  +      jpegtran,
         gifsicle,
         svgo,
         dest,
@@ -64,7 +66,8 @@ const image = ({
       config,
       plugins,
       pngquant,
-      jpegoptim,
+  -   jpegoptim,
+  +   jpegtran,
       gifsicle,
       svgo,
       dest,
